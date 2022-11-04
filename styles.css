@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: "SF Pro Display";
+}
+
+p {
+    font-family: "SF Pro Text";
+}
+
+ul {
+    list-style: none;
+}
+
+.nav__global {
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    height: 48px;
+}
+
+.nav--header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav--icn {
+    width: 100%;
+    height: 100%;
+    padding: 0 8px;
+    opacity: 80%;
+    transition: 0.3s;
+}
+
+.nav--icn-wrapper {
+    width: 48px;
+    height: 48px;
+}
+.nav--icn:hover {
+    opacity: 100%
+}
+
+.nav--menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 17px 0;
+    opacity: 80%;
+}
+
+.nav--menu-bar {
+    display: block;
+    width: 15px;
+    height: 1px;
+    background: white;
+}
+
+
+
