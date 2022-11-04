@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+a {
+    color: black;
+    text-decoration: none; /* no underline */
+    font-family: -apple-system;
+  }
+
 h1, h2, h3 {
     font-family: "SF Pro Display";
 }
@@ -16,11 +22,18 @@ p {
 ul {
     list-style: none;
 }
-
+main {
+    height: 500vh;
+}
 .nav__global {
     background: rgba(0,0,0,0.8);
     backdrop-filter: saturate(180%) blur(20px);
     height: 48px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.7s;
 }
 
 .nav--header {
@@ -43,6 +56,7 @@ ul {
     width: 48px;
     height: 48px;
 }
+
 .nav--icn:hover {
     opacity: 100%
 }
@@ -54,6 +68,44 @@ ul {
     align-items: center;
     padding: 17px 0;
     opacity: 80%;
+}
+
+.nav--menu {
+    display: inline-block;
+}
+
+/* dropdown menu */
+.nav--list {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    padding: 20px 40px 8px 40px;
+}
+
+.nav--link-wrapper {
+    font-size: 17px;
+}
+
+.nav--link-wrapper {
+    display: flex;
+    align-items: center; 
+    height: 44px;
+    border-bottom: 1px solid #f5f5f740;
+}
+
+.nav--link{
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.23536;
+    letter-spacing: 0.1px;
+    transition: 0.3s;
+}
+
+.nav--link:hover {
+    color: rgba(255, 255, 255, 1); 
 }
 
 .nav--menu-bar {

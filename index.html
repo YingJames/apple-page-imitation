@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,52 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
     <nav class="nav__global">
         <ul class="nav--header">
             <li class="nav--icn-wrapper nav--menu">
-                <a href="#">
-                   <i class="nav--icn nav--menu-wrapper ">
-                    <span class="nav--menu-bar"></span>
-                    <span class="nav--menu-bar"></span>
-                   </i>
+                <a href="#" onclick="toggleMenu()">
+                    <i class="nav--icn nav--menu-wrapper ">
+                        <span class="nav--menu-bar"></span>
+                        <span class="nav--menu-bar"></span>
+                    </i>
                 </a>
+
+                <div class="nav--list">
+                    <ul>
+                        <li class="nav--link-wrapper">
+                            <a href="" class="nav--link">Store</a>
+                        </li>
+                        <li class="nav--link-wrapper">
+                            <a href="" class="nav--link">Mac</a>
+                        </li>
+                        <li class="nav--link-wrapper">
+                            <a href="" class="nav--link">iPad</a>
+                        </li>
+                        <li class="nav--link-wrapper">
+                            <a href="" class="nav--link">iPhone</a>
+                        </li>
+                        <li class="nav--link-wrapper">
+                            <a href="" class="nav--link">Watch</a>
+                        </li>
+                        <li class="nav--link-wrapper">
+                            <a href="" class="nav--link">AirPods</a>
+                        </li>
+                        <li class="nav--link-wrapper">
+                            <a href="" class="nav--link">TV & Home</a>
+                        </li>
+                        <li class="nav--link-wrapper">
+                            <a href="" class="nav--link">Only on Apple</a>
+                        </li>
+                        <li class="nav--link-wrapper">
+                            <a href="" class="nav--link">Accessories</a>
+                        </li>
+                        <li class="nav--link-wrapper">
+                            <a href="" class="nav--link">Support</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li class="nav--icn-wrapper">
                 <a href="www.apple.com">
@@ -26,11 +63,11 @@
             </li>
             <li class="nav--icn-wrapper">
                 <a href="#">
-                    <img class="nav--icn nav--bag-icn" src="./images/bag_icon.svg" alt="shopping bag"> 
+                    <img class="nav--icn nav--bag-icn" src="./images/bag_icon.svg" alt="shopping bag">
                 </a>
             </li>
         </ul>
-        <ul class="nav--list"></ul>
+
     </nav>
 
     <main>
@@ -56,5 +93,7 @@
     </main>
 
     <footer></footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
